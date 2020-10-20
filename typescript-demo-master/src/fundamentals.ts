@@ -8,8 +8,8 @@
 /**
  * var vs let/const
  */
-/*
-function main() {
+
+(function main() {
   console.log("START");
   if (true) {
     var lang = "vi";
@@ -19,10 +19,10 @@ function main() {
   }
   console.log(lang);
   console.log(target);
-}
- */
-/*
-function main() {
+})();
+
+
+(function main() {
   var x = 5;
   console.log(x);
   var x = 10;
@@ -32,24 +32,24 @@ function main() {
   console.log(y);
   let y = 100;
   console.log(y);
-}
-*/
+})();
 
-/*
-function main() {
+
+
+(function main() {
   console.log(x);
   var x = 5;
 
   console.log(y);
   let y = 10;
-}
- */
+})();
+
 
 /**
  * Data types
  */
-/*
-function main() {
+
+(function main() {
   let message: string;
   let total: number = 100;
   let isProduction = true;
@@ -93,11 +93,11 @@ function main() {
       extra: 'data'
     } as IPost;
   }
-}
- */
+})();
+
 
 function main() {}
 
-// tslint:enable
+ // tslint:enable
 
 main();
