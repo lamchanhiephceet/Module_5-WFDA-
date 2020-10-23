@@ -1,0 +1,10 @@
+<h2>Today's article</h2>
+<hr>
+<div *ngFor="let art of articles">
+  <a href="{{art.url}}" target="_blank">{{art.title}}</a>
+  <app-likes></app-likes>
+</div>
+<hr>
+<input type="text" id="new-title">
+<input type="text" id="new-url">
+<button (click)="addArticle()">Add</button>
